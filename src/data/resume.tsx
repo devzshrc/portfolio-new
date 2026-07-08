@@ -106,6 +106,7 @@ export const DATA = {
     {
       title: "built an ai-powered form generator in a hackathon",
       description: "shipped [SCHEMA](https://notyourtypeformx-web.vercel.app/), with multiple themes, ai-assisted generation, deep analytics, and team collaboration with rbac.",
+      image: "",
     },
   ],
   projects: [
@@ -142,6 +143,7 @@ export const DATA = {
         },
       ],
       image: "/notyourtypeformx.png",
+      lightImage: "",
       video: "",
     },
   ],
@@ -151,6 +153,7 @@ export const DATA = {
       href: "/blog",
       type: "Writing",
       description: "my notes, essays, and technical posts live here.",
+      image: "",
     },
     {
       title: "YouTube",

@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DATA } from "@/data/resume";
 import Image from "next/image";
 import Link from "next/link";
-import { NotebookText, PlayCircle } from "lucide-react";
+import { NotebookText } from "lucide-react";
 import Markdown from "react-markdown";
 import { EmailSignupForm } from "@/components/EmailSignupForm";
 import { RealTimeAge } from "@/components/RealTimeAge";
@@ -205,11 +205,7 @@ export default function Page() {
                       />
                     ) : (
                       <div className="flex h-32 w-full items-center justify-center bg-muted/40">
-                        {item.type === "Video" ? (
-                          <PlayCircle className="size-8 text-muted-foreground" />
-                        ) : (
-                          <NotebookText className="size-8 text-muted-foreground" />
-                        )}
+                        <NotebookText className="size-8 text-muted-foreground" />
                       </div>
                     )}
                     <div className="p-4">
