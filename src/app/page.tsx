@@ -12,6 +12,9 @@ import { NotebookText } from "lucide-react";
 import Markdown from "react-markdown";
 import { EmailSignupForm } from "@/components/EmailSignupForm";
 import { RealTimeAge } from "@/components/RealTimeAge";
+import { GitHubContributions } from "@/components/github-contributions";
+import { GitHubRepositories } from "@/components/github-repositories";
+import { TufProfileStats } from "@/components/tuf-profile-stats";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -179,6 +182,36 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+      <section id="github">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 8.9}>
+            <h2 className="text-xl font-bold">github</h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <GitHubContributions profileUrl={DATA.contact.social.GitHub.url} />
+          </BlurFade>
+        </div>
+      </section>
+      <section id="open-source">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9.1}>
+            <h2 className="text-xl font-bold">open source</h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 9.2}>
+            <GitHubRepositories profileUrl={DATA.contact.social.GitHub.url} />
+          </BlurFade>
+        </div>
+      </section>
+      <section id="tuf">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9.3}>
+            <h2 className="text-xl font-bold">tuf profile</h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 9.4}>
+            <TufProfileStats profileUrl={DATA.tufProfileUrl} />
+          </BlurFade>
         </div>
       </section>
       <section id="writing">

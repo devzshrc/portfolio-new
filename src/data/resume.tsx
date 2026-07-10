@@ -5,6 +5,7 @@ export const DATA = {
   name: "Devashish",
   initials: "dev",
   url: "https://devzshrc.in",
+  tufProfileUrl: "https://takeuforward.org/profile/de5ash1zh",
   location: "Varanasi, India",
   locationLink: "https://maps.app.goo.gl/qSvDxBfiHya7pSp27",
   birthDate: new Date("2003-01-25"), 
